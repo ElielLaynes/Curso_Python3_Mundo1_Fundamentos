@@ -1,0 +1,18 @@
+#Tipos Primitivos
+
+Python vários tipos, e para iniciar vamos ver 4 tipos para iniciar.
+
+Os 4 tipos mais básico são?
+
+* int == Números inteiros - (7, -4, 0, 9387);
+* float == Números reais ou números de pontos flutuantes - (4.5, 0.076, -15.223, 7.0);
+* bool == Valores lógicos ou booleanos - (True ou False);
+* str == Valores caracteres ou string - ('Olá', '7.5', '').
+
+Print com fomatação de saída utilizando .format()
+
+**Exemplo:**
+```
+s = 1 + 2
+print('A soma vale {}'.format(s))
+```

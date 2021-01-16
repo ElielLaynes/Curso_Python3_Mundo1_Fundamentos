@@ -38,5 +38,26 @@ Em python, o símbolo de igualdade é representado por 2 sinais de igual(==), en
 # Imprimir na tela com fomatação de espaço e ajuste a direita, esqueda ou centralizado
 
 # Com espaço delimitado
-nome = input('Qual é o seu nome? ')
-print('Prazer em te conhecer {:20}'.format(nome))
+nome = str(input('Qual é o seu nome? '))
+print('Prazer em te conhecer {:20}!'.format(nome)) # Com 20 espaços
+print('Praze em te conhecer {:>20}!'.format(nome)) # Justificado a direita
+print('Praze em te conhecer {:<20}!'.format(nome)) # Justificado a esquerda
+print('Praze em te conhecer {:^20}!'.format(nome)) # Centralizado
+print('Praze em te conhecer {:=^20}!'.format(nome)) # Centralizado com sinal igual dos lados
+
+# Formatação de Casas Decimais
+        # dentro das chaves coloca {:.2f}, ou seja, .2f(duas casas decimais flutuantes)
+
+n1 = int(input('Digite um valor: '))  
+n2 = int(input('Digite outro valor: '))
+s = n1 + n2
+m = n1 * n2
+d = n1 / n2
+di = n1 // n2
+e = n1 ** n2
+print('A soma é {}, \nO produto é {} e \nDivisão é {:.2f}'.format(s, m, d), end=' ')
+print('Divisão inteira {} e potência {}'.format(di, e))
+
+# OBSERVAÇÕES:
+# Para quebrar uma linha usa \n
+# Para não quebrar a linha, imprimir tudo na mesma linha, usa: end=''

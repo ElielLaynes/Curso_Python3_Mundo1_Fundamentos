@@ -3,6 +3,8 @@
        # Digite um número: 6.127
        # O número 6.127 tem a parte inteira 6.
 
+# importando a biblioteca math e usando o médoto trunc (truncate)
 from math import trunc
-num = float(input('Digite um Número Real qualquer: '))
-print('O número {} tem a parte inteira {}'. format(num, trunc(num)))
+
+num = float(input('Digite um Número Real: '))
+print(f'o Número {num} tem a parte inteira: {trunc(num)}')

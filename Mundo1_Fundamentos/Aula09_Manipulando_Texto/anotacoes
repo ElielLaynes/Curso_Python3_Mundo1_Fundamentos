@@ -1,0 +1,188 @@
+
+
+
+                        >>> FATIAMENTO DE STRINGS <<<
+
+
+
+* O python fatia uma string e adiciona ela em um espaço de memória e para cada letra ele acrescenta um índice.
+** O indíce em python sempre começa por ZERO (0)
+
+Exemplos:
+
+# Recuperando UMA letra
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase[9] --> Vai restornar apenas o caractere no índice 9
+
+# Recuperando um INTERVALOR de caracteres
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase[9:13] --> Retorna os caracteres nesse intervalo, Excluindo o índice 13 = 'Víde'
+
+# Recupendando um intevalor de caracteres com SALTANDO caracteres
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase[9:21:2] -- > Retonar o intevalor de caracteres entre o índice 9 e 21, pulando de 2 em 2.
+
+# Recupenando um intevalor com delimitador de FINAL
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase[:5] --> retona o intervalor de caractes do ínício(iídice ZERO) ATÉ do índice 5
+
+# Recupenando um intevalor com delimitador de ÍNÍCIO
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase[15:] --> retona o intervalor de caractes A PARTIR do índice 15 até o final
+
+
+# Recupendao um intervalo de caracteres SEM ESPECIFICAR O FIM, saltando índices
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase[9::3] --> retona o intervalor de caractes do índice 9 até o final (Que é desconhecido), saltando de 3 em 3 índices
+
+
+
+
+                        >>> ANÁLISE DE STRINGS <<<
+
+
+
+# Verificando o COMPRIMENTO de uma frase(string)
+# Função len()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    len(frase) --> retorna o tamando da string, nesse caso 21 caracteres
+
+# verificando quantas vezes algum elemento aparece na string
+# Função count()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.count('o') --> Vai retornar quantas vezes a letra 'o' aparece na frase, nesse caso 3 vezes.
+
+# Verificar quantas vezes aparece um elemento na string já com FATIAMENTO.
+# Função count()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.count('o', 0, 13) --> Vai retornar quantas vezes a letra 'o' aparece, NO INTERVALOR entre o índice zero(0) e treze (13), nesse acaso 1 vez.
+
+
+# Verificando SE CONTÉM UM ELEMENTO E ONDE COMEÇA esse elemento na string
+# Função find()
+
+    frase = 'Curso em Vídeo Pyhton'
+    
+    frase.find('em') --> Se tiver isso na string, Retorna número de índice onde começa esse conjunto de caracteres, nesse caso, índice 6
+
+        * Observação: Caso a função find() não entre o conjunto de caracteres dentro da string ou intevalor submetido a ela, a função vai retornar -1, isso quer dizer que os elementos não foram encontrados.
+
+# Verificar se um string CONTÉM um elemento utilizando o operador >> in <<
+# Operador in
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    'Curso' in frase --> Retorna um valor booleano, True ou False (verdadeiro ou falso), se encontra ou não a o conjunto de caractares na string
+
+
+
+
+                        >>> TRANSFORMAÇÃO DE STRINGS <<<
+
+*Via de regra, strings são elementos imutaveis, ou seja, não podem ser alteradas. Porém, com a utilização de métodos(também conhecidos como Funções), podemos fazer algumas modificações.
+
+# TROCANDO uma palavra por outra
+# Função replace()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.replace('Python', 'Android') --> O replace, vai trocar a palavra 'Pyhton' por 'Android' na strinf armazenada na variável frase.
+
+# Colocando TODOS os caractares de uma string em CAIXA ALTA
+# Função upper()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.upper() --> Retorna a string com todas as letras maiúsculas (CAIXA ALTA)
+
+
+# Colocando TODOS os caractares de uma string em caixa baixa
+# Função lower()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.lower() --> Retorna a string com todas as letras minúsculas (caixa baixa)
+
+# Colocando APENAS O PRIMEIRO CARACTER de uma strinf em MAIÚSCULO
+# Função capitalize()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.capitalize() --> Retorna a string com APENAS O PRIMEIRO caracter da primeira frase da string em maísculo
+
+
+# Colocando TODOS os primeiros caractes de uma string em MAIÚSCULO
+# função title()
+
+    frase = 'Curso em Vídeo Pyhton'
+
+    frase.title() --> Retorna todas as primeiras letras das palavras da variável frase com LETRAS MAIÚSCULAS.
+
+
+# Removendo todos os espaços inúteis no ínico ou no fim de uma string
+# Função strip()
+
+    frase =    Aprendendo Python  
+
+    frase.strip() --> Remove os espaços deixados no íncios e no fim da string armaezada na variável frase.
+
+
+# Removendo Espaços na Direta ou na Esquerda
+# Funções rstrip() - Direta -  e  lstrip() - Esquerda
+
+    frase =    Aprendendo Python   
+
+    frase.rstrip() --> Remove os espaços do LADO DIREITO da string 
+
+    frase.lstrip() --> Remove os espaços do LADO ESQUERDO da string
+
+
+
+
+                        >>> DIVISÃO DE STRINGS <<<
+
+
+# Dividir uma string considerando os espaços
+# Função split()
+
+    frase = 'Curso,
+                em,
+                Vídeo,
+                Pyhton'
+
+    frase.split() --> divide a string por seus espaços e cada palavra ganha índice próprios, e cada palavra é colocada em uma lista.
+
+
+
+                        >>> JUNÇÃO DE STRINGS <<<
+
+# Juntas as palavras de uma lista de string
+# Funções join()
+
+    frase = 'Curso,
+            em,
+            Vídeo,
+            Pyhton'
+
+    '-'.join(frase) --> Junta as palavras da variável frase com o separados de palavras sendo o hífen.
+        *Observação: caso queria que o separados seja espaços, é só colocar o espaço onde está o hífen.
+
+

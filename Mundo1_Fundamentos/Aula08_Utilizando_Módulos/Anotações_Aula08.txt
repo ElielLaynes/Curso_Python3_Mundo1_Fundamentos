@@ -1,0 +1,31 @@
+
+Aula 08 - Utilizando Módulos
+
+Podemos importar outras biblotecas para auxiliar no desenvolvimento.
+
+para importar uma biblioteca, o camando é import 
+
+Exemplo
+
+* Importar todos os módulos (generalista):
+import bebida ==> Importa todos os módulos de uma biblioteca de bebidas [cerveja, suco, leite, café,...]
+
+* Importar apenas módulos específicos (específico):
+from bebida import cerveja ==> Importa apenas o módulo de cerveja da biblioteca bebida
+
+Exemplo com bibloteca math
+
+A biblioteca math contém diversos módulos dentre eles:
+    > math
+        > ceil() == Faz arredondamento pra cima;
+          floor() == Faz arredondamento pra baixo;
+          trunc() == Vai truncar um número, ou seja, vai eliminar números da vírgula pra frente, sem fazer arredondamento nenhum;
+          pow() == Faz cálculo da Potência(da mesma forma que os 2 asteriscos);
+          sqrt() == Faz o cálculo da Raiz Quadrada;
+          factorial() == Faz o cálculo do Fatorail de um número.
+
+Desse modo, quando for utilizado o comando - import math - vai ser importado todas os módulos que estão dentro dessa biblioteca descritos acima.
+
+Caso use o comando - from math import sqrt - apenas o módulo de cálculo de Raiz Quadra vai ser importado para ser usado. Também chamada e importação otimizada.
+
+    Do mesmo modo, se quiser importar apenas alguns módulos é só usar a importação otimizada, e colocar os módulos que precisa separados por vírgula, desse modo: from math import sqrt, floor, pow

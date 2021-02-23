@@ -7,8 +7,8 @@
 
 
 print()
-print(' ===== Essas Retas Podem Forma um Triângulo? =====')
-print()
+print ( '===== Essas Retas Podem Formar um Triangulo =====')
+imprimir ()
 
 reta1 = float ( input('Primeira Reta: '))
 reta2 = float ( input('Segunda Reta: '))
